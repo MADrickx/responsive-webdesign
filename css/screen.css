@@ -1,0 +1,46 @@
+body {
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+div{
+    background-color: lightblue;
+    border-radius: 15px;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+@media screen and (min-width:300px){
+    body{
+        background-color: green;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    div{
+        padding: 0.5%;
+        margin: 0.5%;
+    }
+    div:first-child{
+        width: 64%;
+    }
+    div:nth-child(2){
+        width: 31%;
+    }
+    div:nth-child(3){
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:768px){
+    body{
+        background-color: blue;
+    }
+    div,div:first-child,div:nth-child(2),div:nth-child(3) {
+        padding: 0.5%;
+        margin: 0.5%;
+        width: 31%;
+    }
+}
